@@ -1,0 +1,239 @@
+@font-face {
+  font-family: dancingScript__regular;
+  src: url(../fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: dancingScript__bold;
+  src: url(../fonts/Dancing_Script/static/DancingScript-Bold.ttf);
+}
+
+@font-face {
+  font-family: signikaNegative__300;
+  src: url(../fonts/Signika_Negative/static/SignikaNegative-Regular.ttf);
+}
+
+@font-face {
+  font-family: signikaNegative__600;
+  src: url(../fonts/Signika_Negative/static/SignikaNegative-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: signikaNegative__700;
+  src: url(../fonts/Signika_Negative/static/SignikaNegative-Bold.ttf);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.sauv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  width: 940px;
+  height: 600px;
+  transition: 1s;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 1s;
+}
+
+img {
+  z-index: -10;
+  position: absolute;
+  object-fit: cover;
+  width: 857px;
+  height: 652px;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%) translateY(50%);
+  transform-origin: left bottom;
+  animation: img 2500ms both;
+  transition: 1s;
+}
+
+@keyframes img {
+  0% {
+    transform: scale(0) translateX(-50%) translateY(50%);
+  }
+
+  100% {
+    transform: scale(1) translateX(-50%) translateY(50%);
+  }
+}
+
+h1 {
+  width: 505px;
+  font-size: 40px;
+  padding: 40px;
+  border-radius: 100px 100px 0px 0px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  text-align: center;
+  font-family: signikaNegative__300;
+  animation: h1 2000ms 500ms both;
+  transition: 1s;
+  margin: 0;
+}
+
+@keyframes h1 {
+  0% {
+    transform: translateY(-550px);
+  }
+}
+
+h2 {
+  width: 787px;
+  font-size: 40px;
+  padding: 75px;
+  border-radius: 242.5px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  text-align: center;
+  font-family: signikaNegative__300;
+  animation: h2 1500ms 1s both;
+  transition: 1s;
+  margin: 0;
+}
+
+@keyframes h2 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+header {
+  width: 210px;
+  height: 75px;
+  border-radius: 0px 0px 50px 50px;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 109393939339;
+  animation: header 2000ms 500ms both;
+  transition: 1s;
+}
+
+@keyframes header {
+  0% {
+    transform: translateY(550px);
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.arrow {
+  font-size: 40px;
+  transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  img {
+    width: 450px;
+    height: 350px;
+  }
+
+  .sauv {
+    width: 750px;
+    height: 400px;
+  }
+
+  h1 {
+    width: 300px;
+    font-size: 25px;
+    padding: 25px;
+    border-radius: 50px 50px 0px 0px;
+  }
+
+  h2 {
+    width: 450px;
+    font-size: 25px;
+    padding: 50px 30px;
+    border-radius: 242.5px;
+  }
+
+  header {
+    width: 160px;
+    height: 40px;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .arrow {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 410px;
+    height: 320px;
+  }
+
+  h1 {
+    width: 250px;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 25px;
+  }
+
+  h2 {
+    width: 300px;
+    font-size: 20px;
+    padding: 30px 15px;
+    border-radius: 150px;
+  }
+
+  header {
+    width: 60px;
+    height: 40px;
+    border-radius: 30px;
+  }
+
+  .arrow {
+    font-size: 25px;
+  }
+
+  .sauv {
+    width: 410px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  img {
+    width: 310px;
+    height: 250px;
+  }
+
+  .sauv {
+    width: 310px;
+    height: 230px;
+  }
+
+  h2 {
+    width: 250px;
+    font-size: 20px;
+    padding: 30px 15px;
+    border-radius: 150px;
+  }
+}

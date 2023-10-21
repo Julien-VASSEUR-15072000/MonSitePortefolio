@@ -1,0 +1,376 @@
+@font-face {
+  font-family: dancingScript__regular;
+  src: url(../fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: dancingScript__bold;
+  src: url(../fonts/Dancing_Script/static/DancingScript-Bold.ttf);
+}
+
+@font-face {
+  font-family: signikaNegative__300;
+  src: url(../fonts/Signika_Negative/static/SignikaNegative-Regular.ttf);
+}
+
+@font-face {
+  font-family: signikaNegative__600;
+  src: url(../fonts/Signika_Negative/static/SignikaNegative-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: signikaNegative__700;
+  src: url(../fonts/Signika_Negative/static/SignikaNegative-Bold.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  animation: loader 500ms both;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.imgPaloma {
+  width: 197px;
+  height: 230px;
+  margin: 20px auto 0 auto;
+  border-radius: 73px;
+  border-right: 1px solid #45b7a2;
+  border-left: 1px solid #45b7a2;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paloma {
+  object-fit: cover;
+  width: 150px;
+  height: 209.055px;
+  border-radius: 75px;
+  border-top: 2px solid #45b7a2;
+  border-bottom: 2px solid #45b7a2;
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  margin: 30px auto 0 auto;
+  width: 300px;
+  color: #000;
+  text-align: center;
+  font-family: signikaNegative__300;
+  font-size: 20px;
+}
+
+span {
+  color: #45b7a2;
+}
+
+.trait {
+  margin: 50px auto;
+  width: 50px;
+  height: 2px;
+  background: #000;
+}
+
+h2 {
+  margin: 0 auto;
+  width: 300px;
+  color: #000;
+  text-align: center;
+  font-family: signikaNegative__300;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #45b7a2;
+}
+
+h3 {
+  margin: 0 auto;
+  width: 300px;
+  color: #000;
+  text-align: center;
+  font-family: signikaNegative__700;
+  font-size: 25px;
+}
+
+.formation {
+  padding: 0;
+  margin: 50px auto 0 auto;
+  width: 300px;
+  list-style-type: none;
+  text-align: center;
+  font-family: signikaNegative__600;
+  font-size: 20px;
+}
+
+.marginLi {
+  margin: 30px 0;
+}
+
+.brain {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  max-width: 545px;
+  height: 418px;
+  border-radius: 55px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.brain__imgFond {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+  object-fit: cover;
+  width: 80%;
+  height: 213px;
+  filter: blur(2px);
+}
+
+.passion__p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  width: 246px;
+  color: #45b7a2;
+  text-align: center;
+  font-family: dancingScript__regular;
+  font-size: 25px;
+}
+
+.passion__img {
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 141px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.gloire {
+  width: 300px;
+  margin: 30px auto 60px auto;
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: dancingScript__regular;
+  font-size: 20px;
+}
+
+.transition {
+  transition: 1s;
+}
+
+.brain2 {
+  display: none;
+}
+
+.h3__2 {
+  display: none;
+}
+
+.formation2 {
+  display: none;
+}
+
+.passion__img2 {
+  display: none;
+}
+
+.passion__p2 {
+  display: none;
+}
+
+.trait2 {
+  display: none;
+}
+
+.trait3 {
+  display: none;
+}
+
+@media screen and (min-width: 425px) {
+  .brain__imgFond {
+    width: 95%;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imgPaloma {
+    width: 201px;
+    height: 320px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+  }
+
+  .paloma {
+    width: 100%;
+    height: 280px;
+    flex-shrink: 0;
+  }
+
+  .brain {
+    display: none;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  .formation {
+    display: none;
+  }
+
+  .trait {
+    display: none;
+  }
+
+  .passion__img {
+    display: none;
+  }
+
+  h1 {
+    position: absolute;
+    width: 250px;
+    top: 375px;
+    left: 20px;
+  }
+
+  h2 {
+    position: absolute;
+    width: 250px;
+    top: 500px;
+    left: 20px;
+  }
+
+  .brain2 {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    left: 280px;
+    max-width: 2000px;
+    height: 544px;
+    border-radius: 55px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .brain__imgFond {
+    z-index: -10;
+    width: 343px;
+    height: 343px;
+    filter: blur(2px);
+    top: 120px;
+    left: 10px;
+    transform: translateX(0);
+  }
+
+  .h3__2 {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    display: block;
+    margin: 0;
+    width: 300px;
+    color: #000;
+    text-align: center;
+    font-family: signikaNegative__700;
+    font-size: 25px;
+  }
+
+  .formation2 {
+    display: block;
+    position: absolute;
+    left: 45%;
+    top: 120px;
+    width: 330px;
+    text-align: center;
+    font-family: signikaNegative__600;
+    font-size: 25px;
+    list-style-type: none;
+  }
+
+  .passion__img2 {
+    display: block;
+    display: block;
+    position: absolute;
+    left: 110px;
+    top: 230px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .passion__p2 {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    color: #45b7a2;
+    text-align: center;
+    font-family: dancingScript__regular;
+    font-size: 25px;
+  }
+
+  .trait2 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 665px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 2px;
+    background: #000;
+  }
+
+  .passion__p2__P1 {
+    display: block;
+    width: 340px;
+  }
+
+  .trait3 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 840px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 2px;
+    background: #000;
+  }
+
+  .gloire {
+    padding-bottom: 40px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 880px;
+    transform: translateX(-50%);
+  }
+}

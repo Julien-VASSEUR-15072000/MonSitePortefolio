@@ -95,7 +95,64 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #45b7a2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b74545;
+}
+
+.hover {
+  width: 35%;
+  height: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.link__anim,
+.link__anim__rigth {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: transparent;
+  display: block;
+  transition: 300ms;
+}
+
+.link__anim {
+  left: -50%;
+}
+
+.link__anim__rigth {
+  right: -50%;
+}
+
+a:hover .link__anim {
+  transform-origin: left;
+  background: #b74545;
+  transform: translateX(70%);
+  /* animation: linkAnimLeft both; */
+  animation-timing-function: cubic-bezier(0.92, 0.04, 1, 1);
+}
+
+a:hover .link__anim__rigth {
+  transform-origin: right;
+  background: #b74545;
+  transform: translateX(-70%);
+  animation-timing-function: cubic-bezier(0.92, 0.04, 1, 1);
+}
+
+a:active .link__anim {
+  animation: linkAnimActiveLeft both;
+  animation-timing-function: cubic-bezier(0.92, 0.04, 1, 1);
+  transform: translateX(100%);
+  transition: 100ms;
+}
+
+a:active .link__anim__rigth {
+  animation: linkAnimActiveRight both;
+  animation-timing-function: cubic-bezier(0.92, 0.04, 1, 1);
+  transform: translateX(-100%);
+  transition: 100ms;
 }
 
 h3 {

@@ -88,6 +88,10 @@ h1 {
   margin: 0;
 }
 
+span {
+  color: #45b7a2;
+}
+
 @keyframes h1 {
   0% {
     transform: translateY(-550px);
@@ -143,6 +147,7 @@ a {
 }
 
 .arrow {
+  color: #d15dd6;
   font-size: 40px;
   transition: 1s;
 }
@@ -184,6 +189,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  main {
+    position: relative;
+  }
+
   img {
     width: 410px;
     height: 320px;
@@ -204,9 +213,13 @@ a {
   }
 
   header {
+    top: 100%;
+    transform: translateY(100%);
+    position: absolute;
     width: 60px;
     height: 40px;
     border-radius: 30px;
+    transition: 1s;
   }
 
   .arrow {
@@ -220,6 +233,11 @@ a {
 }
 
 @media screen and (max-width: 425px) {
+  header {
+    transform: translateY(0);
+    transition: 1s;
+  }
+
   img {
     width: 310px;
     height: 250px;

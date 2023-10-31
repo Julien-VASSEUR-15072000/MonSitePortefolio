@@ -1,21 +1,21 @@
 const curriculum = document.querySelector(".curriculum");
 const tiroir = document.querySelector(".tiroir");
 const trait = document.querySelectorAll(".trait");
-const body = document.querySelector("body");
+const body = document.body; // Sélectionnez directement le body
 const formation = document.querySelector(".formation");
 const h1 = document.querySelector("h1");
-const tiroir1 = document.querySelector;
+const flou = document.querySelector(".divFlou");
 
 tiroir.addEventListener("click", (event) => {
   if (event.target !== formation && !formation.contains(event.target)) {
     trait.forEach((element) => {
       element.classList.toggle("displayNone");
     });
+    flou.classList.toggle("divFlou2");
     tiroir.classList.toggle("tiroirGrand");
     curriculum.classList.toggle("curriculumBlock");
-    if (h1) {
-      // h1.classList.toggle("displayNone");
-    }
+    flou.classList.toggle("divFlou");
+    body.classList.toggle("pasBouger");
   }
 });
 
@@ -24,10 +24,10 @@ body.addEventListener("click", (event) => {
     trait.forEach((element) => {
       element.classList.remove("displayNone");
     });
+    flou.classList.remove("divFlou2");
+    flou.classList.add("divFlou");
     tiroir.classList.remove("tiroirGrand");
     curriculum.classList.remove("curriculumBlock");
-    if (h1) {
-      // h1.classList.remove("displayNone");
-    }
+    body.classList.remove("pasBouger");
   }
 });

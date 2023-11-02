@@ -64,7 +64,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #b74545;
+  color: #bc135f;
 }
 
 header {
@@ -115,13 +115,13 @@ h1 {
   left: 90%;
   transition: 500ms;
   border-radius: 10px;
-  border: 2px solid #45b7a2;
+  border: 2px solid #bc135f;
 }
 
 .trait {
   width: 48px;
   height: 2px;
-  background: #b74545;
+  background: #bc135f;
 }
 
 .curriculum {

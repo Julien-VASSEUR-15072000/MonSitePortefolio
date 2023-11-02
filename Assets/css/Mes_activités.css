@@ -1,0 +1,459 @@
+@font-face {
+  font-family: dancingScript__regular;
+  src: url(../fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: dancingScript__bold;
+  src: url(../fonts/Dancing_Script/static/DancingScript-Bold.ttf);
+}
+
+@font-face {
+  font-family: signikaNegative__300;
+  src: url(../fonts/Signika_Negative/static/SignikaNegative-Regular.ttf);
+}
+
+@font-face {
+  font-family: signikaNegative__600;
+  src: url(../fonts/Signika_Negative/static/SignikaNegative-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: signikaNegative__700;
+  src: url(../fonts/Signika_Negative/static/SignikaNegative-Bold.ttf);
+}
+
+.curriculum h2 {
+  font-family: signikaNegative__300;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  transition: 1s;
+}
+
+p {
+  font-family: dancingScript__regular;
+  text-align: justify;
+}
+
+h2 {
+  font-family: dancingScript__bold;
+  font-size: 40px;
+  margin: 50px 0 0 0;
+}
+
+h3 {
+  font-family: dancingScript__bold;
+  font-size: 25px;
+  margin: 0;
+}
+
+.main__p1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.main__legende {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  width: 60%;
+  height: 150px;
+}
+
+.h180 {
+  height: 180px;
+}
+
+.carre {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.rond {
+  border-radius: 15px;
+}
+
+.main__legende__carres__jaune {
+  background: #aeb745;
+}
+
+.main__legende__carres__rouge {
+  background: #b74545;
+}
+
+.main__legende__carres__bleu {
+  background: #465cab;
+}
+
+.main__legende__carres__jaune2 {
+  background: rgba(174, 183, 69, 0.4);
+}
+
+.main__legende__carres__rouge2 {
+  background: rgba(183, 69, 69, 0.4);
+}
+
+.main__legende__carres__bleu2 {
+  background: rgba(69, 183, 162, 0.2);
+}
+
+.main__legende__carres__noir {
+  background: #000;
+}
+
+.main__legende__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 333px;
+}
+
+.main__legende__carres {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main__legende__text__25 {
+  font-family: dancingScript__bold;
+  font-size: 25px;
+  margin: 0;
+  text-align: left;
+}
+
+.main__traitLegende {
+  width: 288px;
+  height: 2px;
+  background: #000;
+  margin: 40px 0;
+}
+
+.frise {
+  margin: 100px 0;
+  position: relative;
+  width: 300px;
+  height: 1765px;
+}
+
+.frise__triangle {
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 0 85px 165px 85px;
+  border-color: transparent transparent #45b7a2 transparent;
+}
+
+.frise__pPiano {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.frise__fPiano p {
+  color: white;
+}
+
+.frise__fPiano2013 p {
+  text-align: center;
+}
+
+.frise__fPiano {
+  width: 148px;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 165px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #45b7a2;
+}
+
+.frise__fPiano2013 {
+  border-radius: 0px 0px 100px 100px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  background: #fff;
+  width: 146px;
+  height: 100px;
+  position: absolute;
+  top: 1665px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.frise__saxo {
+  width: 40px;
+  height: 460px;
+  border-radius: 100px;
+  background: #aeb745;
+  position: absolute;
+  top: 165px;
+}
+
+.frise__orchestreSaxo {
+  width: 40px;
+  height: 180px;
+  position: absolute;
+  top: 165px;
+  right: 0px;
+  border-radius: 100px;
+  background: rgba(174, 183, 69, 0.4);
+}
+
+.frise__violoncelle {
+  width: 40px;
+  height: 460px;
+  position: absolute;
+  top: 625px;
+  border-radius: 100px;
+  background: #b74545;
+}
+
+.frise__orchestreVioloncelle {
+  width: 40px;
+  height: 180px;
+  position: absolute;
+  right: 0px;
+  top: 625px;
+  border-radius: 100px;
+  background: rgba(183, 69, 69, 0.4);
+}
+
+.frise__orchestreAdo {
+  width: 40px;
+  height: 460px;
+  position: absolute;
+  right: 0px;
+  top: 805px;
+  border-radius: 100px;
+  background: rgba(69, 183, 162, 0.2);
+}
+
+.frise__solfege {
+  width: 40px;
+  height: 580px;
+  position: absolute;
+  top: 1085px;
+  border-radius: 100px;
+  background: #465cab;
+}
+
+.frise__point {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top1 {
+  top: 900px;
+}
+
+.top2 {
+  top: 1050px;
+}
+
+.top3 {
+  top: 1200px;
+}
+
+span {
+  display: inline-block;
+  color: #000;
+  font-family: dancingScript__bold;
+  font-size: 32px;
+  margin: 0;
+  text-align: center;
+}
+
+.displayContents {
+  display: contents;
+  color: #45b7a2;
+}
+
+.divFlou2 {
+  background: #fffffff3;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .main__p1 {
+    font-size: 25px;
+  }
+
+  span {
+    font-size: 25px;
+  }
+
+  .frise {
+    height: 1235px;
+    width: 200px;
+  }
+
+  .frise__triangle {
+    border-width: 0 60px 115px 60px;
+  }
+
+  .frise__fPiano {
+    width: 108px;
+    top: 115px;
+    height: 1050px;
+  }
+
+  .frise__fPiano2013 {
+    width: 106px;
+    height: 70px;
+    top: 1165px;
+  }
+
+  .frise__saxo {
+    width: 25px;
+    height: 322px;
+    top: 115px;
+  }
+
+  .frise__orchestreSaxo {
+    width: 25px;
+    height: 126px;
+    top: 115px;
+  }
+
+  .frise__violoncelle {
+    width: 25px;
+    height: 322px;
+    top: 437px;
+  }
+
+  .frise__orchestreVioloncelle {
+    width: 25px;
+    height: 126px;
+    top: 437px;
+  }
+
+  .frise__orchestreAdo {
+    width: 25px;
+    height: 322px;
+    top: 563px;
+  }
+
+  .frise__solfege {
+    width: 25px;
+    height: 322px;
+    top: 759px;
+  }
+
+  .top1 {
+    top: 630px;
+  }
+
+  .top2 {
+    top: 735px;
+  }
+
+  .top3 {
+    top: 840px;
+  }
+
+  .frise__fPiano p {
+    font-size: 25px;
+  }
+
+  .frise__fPiano2013 p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .frise {
+    margin: 50px 0;
+  }
+
+  .main__p1 {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  .main__legende__text__25 {
+    font-size: 20px;
+  }
+
+  .main__legende__text {
+    width: 250px;
+  }
+
+  .main__legende {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .fS20 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .main__p1 {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .frise__fPiano p {
+    font-size: 18px;
+  }
+
+  .frise__fPiano2013 p {
+    font-size: 18px;
+  }
+
+  .main__legende__text__25 {
+    font-size: 18px;
+  }
+
+  .fS20 {
+    font-size: 13px;
+  }
+
+  .main__legende__text {
+    width: 225px;
+  }
+
+  .main__legende {
+    width: 90%;
+  }
+
+  .main__traitLegende {
+    width: 150px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}

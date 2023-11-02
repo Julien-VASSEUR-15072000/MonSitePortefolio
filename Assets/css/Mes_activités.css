@@ -119,6 +119,10 @@ h3 {
   width: 333px;
 }
 
+.fS20 {
+  font-size: 20px;
+}
+
 .main__legende__carres {
   display: flex;
   flex-direction: column;
